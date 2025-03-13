@@ -1,0 +1,121 @@
+
+
+/**/
+
+
+header{
+    padding: 100px 25px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap;
+}
+.header_text{
+    width: 850px;
+}
+.header_circle{
+    height: 400px;
+    width: 400px;
+
+    max-height: 60vw;
+    max-width: 60vw;
+
+    overflow: hidden; 
+    border-radius: 50%; 
+    /* border: 10px solid var(--main-brand-color);*/
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.header_circle img{
+    width: 100%; 
+}
+
+/* Sticky Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Schatten für bessere Sichtbarkeit */
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none; 
+    position: relative;
+    padding: 3px;
+    scroll-behavior: smooth; /* Sanftes Scrollen aktivieren */
+}
+nav a:hover{
+    color: var(--text-color); 
+}
+nav a::after{
+    content:''; 
+    height: 2px; 
+    width: 0; 
+    background: var(--main-brand-color); 
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 150ms ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+#toggle_button{
+    display:none;
+}
+label[for="toggle_button"]{
+    display:none;
+}
+label[for="toggle_button"] span{
+    font-size: 40px;
+}
+
+/* Mobile Navigation */
+@media(max-width:800px){
+    nav {
+        position: fixed; /* Fixierte Navigation für Mobile */
+        top: 0; 
+        left: 0; 
+        width: 100%;
+        background: var(--secondary-color);
+        padding: 15px;
+        border-radius: 0 0 25px 25px;
+    }
+    nav ul {
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        gap:20px;
+    }
+    #toggle_button:checked ~ ul {
+        display: flex; 
+    }
+    label[for="toggle_button"] {
+        display:block;
+    } 
+}
+
+/* Sanftes Scrollen für die gesamte Seite aktivieren */
+html {
+    scroll-behavior: smooth;
+}
+

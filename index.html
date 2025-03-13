@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ottmar Portfolio</title>
+    <link rel="stylesheet" href="general_settings.css">
+    <link rel ="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about_me.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="project.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+
+    <header>
+        
+        <div class="header_text"> 
+            <nav>
+                <input type="checkbox" id="toggle_button">
+                <label for="toggle_button">
+                    <span class="material-symbols-rounded"> menu </span>
+                </label>
+                <ul class="navigation-container">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about_me_section">About Me</a></li> 
+                    <li><a href="#skills_section">Skills</a></li>
+                    <li><a href="#project_section">Projects</a></li>
+                    <li><a href="#contact_section">Contact</a></li>
+                </ul>
+            </nav> 
+            <h1>Ottmar, <br> <span style="color:var(--main-brand-color)"> CS-Student</span> </h1>
+            <p class="subheading typing">I'm a Computer Science student at the University of Applied Sciences Erfurt. Even though I'm still at the start of my journey as a computer scientist, I'm already passionate about software development.</p>
+        </div>
+        <div class="header_circle"> 
+            <img src="images/609.jpg" alt="">
+        </div>
+
+    </header>
+
+    <section id="about_me_section"> 
+        <img src="Images/Bild_Ich.jpg" alt=""> 
+        <div class="about_me_container">
+            <h2> About Me</h2>
+            <p> Hi, I'm a student of Applied Computer Science at the University of Applied Sciences Erfurt. I'm still at the beginning of my journey as a developer, but my passion for computer science is already strong. Every day, I strive to expand my skills, learning new technologies and improving my problem-solving abilities.
+                For me, coding is more than just writing lines of code—it's about creating solutions, building innovative projects, and continuously growing. I enjoy tackling challenges, whether it's debugging complex issues or learning a new programming language. Step by step, I’m moving closer to my goal of becoming a professional developer.
+                I'm always open to new opportunities, collaborations, and learning experiences. If you'd like to connect, feel free to reach out!     
+                </p>
+        </div>
+    </section>
+
+    <section id="skills_section">
+        <h2>Skills</h2>
+        
+        <div class="skills-wrapper">
+            <!-- Language -->
+            <div class="skills-category language">
+                <h3>Language</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <p>C</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress language-bar" style="width: 30%;"></div></div>
+                            <div class="skill-level">Basics</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>C++</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress language-bar" style="width: 20%;"></div></div>
+                            <div class="skill-level">Learning</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Frontend -->
+            <div class="skills-category frontend">
+                <h3>Frontend</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress frontend-bar" style="width: 60%;"></div></div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress frontend-bar" style="width: 40%;"></div></div>
+                            <div class="skill-level">Basics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Backend -->
+            <div class="skills-category backend">
+                <h3>Backend</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress backend-bar" style="width: 35%;"></div></div>
+                            <div class="skill-level">Basics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Database -->
+            <div class="skills-category database">
+                <h3>Database</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fas fa-database"></i>
+                        <p>SQLite</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress database-bar" style="width: 50%;"></div></div>
+                            <div class="skill-level">Basics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tools -->
+            <div class="skills-category tools">
+                <h3>Tools</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <p>VS Code</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress tools-bar" style="width: 90%;"></div></div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress tools-bar" style="width: 65%;"></div></div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="learning">I'm currently learning: Java</div>
+    </section>
+    
+
+ 
+
+    <section id="project_section">
+        <h2>Projects</h2>
+        <div class="flex_container_project">
+            <div class="card_project">
+                <h3>My Homepage</h3> 
+                <p>My personal homepage showcases my web development skills. The biggest challenge was creating an appealing design and ensuring clear navigation.</p>
+                <div class="icon_container">
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="Images/Skills_Icon/html-5-svgrepo-com.svg" alt="HTML5">
+                            <span class="tooltip_text">HTML 5</span>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="images/Skills_Icon/css-svgrepo-com.svg" alt="CSS3">
+                            <span class="tooltip_text">CSS 3</span>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="images/Skills_Icon/javascript-svgrepo-com.svg" alt="JavaScript">
+                            <span class="tooltip_text">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Click the button for more information.</p>
+                <a href="">Githup</a>
+            </div>
+    
+            <div class="card_project">
+                <h3>To-Do-List</h3> 
+                <p>This to-do list helps organize tasks efficiently. The main challenge was designing a user-friendly interface and implementing data storage using Local Storage.</p>
+                <div class="icon_container">
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="Images/Skills_Icon/html-5-svgrepo-com.svg" alt="HTML5">
+                            <span class="tooltip_text">HTML 5</span>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="images/Skills_Icon/css-svgrepo-com.svg" alt="CSS3">
+                            <span class="tooltip_text">CSS 3</span>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="images/Skills_Icon/javascript-svgrepo-com.svg" alt="JavaScript">
+                            <span class="tooltip_text">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Click the button for more information.</p>
+                <a href="">Githup</a>
+            </div>
+    
+            <div class="card_project">
+                <h3>WaterDrinking</h3> 
+                <p>The WaterDrinking app reminds users to drink water regularly. One of the challenges was implementing notifications and storing the drinking history.</p>
+                <div class="icon_container">
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="Images/Skills_Icon/html-5-svgrepo-com.svg" alt="HTML5">
+                            <span class="tooltip_text">HTML 5</span>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="images/Skills_Icon/css-svgrepo-com.svg" alt="CSS3">
+                            <span class="tooltip_text">CSS 3</span>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip_inner">
+                            <img src="images/Skills_Icon/javascript-svgrepo-com.svg" alt="JavaScript">
+                            <span class="tooltip_text">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Click the button for more information.</p>
+                <a href="">Githup</a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer id="contact_section">
+        <h2 class="fade-in">Contact</h2>
+        <div class="grid_container">
+            <a href="https://www.instagram.com/dein_profil" target="_blank" class="social-link">
+                <img src="images/instagram-svgrepo-com.svg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/ottmar-frenzel-7a7905355/" target="_blank" class="social-link">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+            </a>
+            <a href="mailto:ottmarprivat@gmail.com" class="social-link">
+                <img src="images/ms-outlook-svgrepo-com.svg" alt="Email">
+            </a>
+            <a href="https://github.com/dein_profil" target="_blank" class="social-link">
+                <img src="images/icons8-github.svg" alt="GitHub">
+            </a>
+        </div>
+        <p id="copyright_text">&copy; 2024 | All rights reserved | Ottmar Frenzel</p>
+    </footer>
+    
+
+</body>
+</html>

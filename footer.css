@@ -1,0 +1,47 @@
+footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.fade-in {
+    font-size: 30px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.grid_container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.grid_container img {
+    height: 50px;
+    width: 50px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.grid_container img:hover {
+    filter: brightness(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
